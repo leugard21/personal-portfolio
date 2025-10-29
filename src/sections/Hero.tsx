@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="flex flex-col gap-6">
+    <section id="home" className="flex flex-col gap-6">
       <div className="inline-flex items-center gap-2 text-meta">
         <span className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_var(--color-accent)]" />
         <span>Available for freelance</span>

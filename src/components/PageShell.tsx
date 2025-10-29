@@ -1,10 +1,15 @@
+import { Header } from "./Header";
+
 type PageShellProps = {
   children: React.ReactNode;
 };
 
 export function PageShell({ children }: PageShellProps) {
   return (
-    <main className="relative min-h-dvh bg-bg-page text-fg-primary overflow-hidden">
+    <main
+      id="top"
+      className="relative min-h-dvh bg-bg-page text-fg-primary overflow-hidden"
+    >
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(0_0%_100%/0.06)_0,transparent_70%)]"
         aria-hidden="true"
@@ -19,6 +24,8 @@ export function PageShell({ children }: PageShellProps) {
           mask-[radial-gradient(circle_at_center,black_0%,transparent_70%)]
         "
       />
+
+      <Header />
 
       <div className="page-inner">{children}</div>
     </main>
