@@ -23,6 +23,9 @@ export function Hero() {
       <div className="flex items-center gap-4 text-body text-fg-dim">
         <a
           href="#"
+          aria-label="Open GitHub profile"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 hover:text-fg-primary transition-colors"
         >
           <Github className="size-4 opacity-70 group-hover:opacity-100" />
@@ -33,6 +36,9 @@ export function Hero() {
 
         <a
           href="#"
+          aria-label="Open LinkedIn profile"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 hover:text-fg-primary transition-colors"
         >
           <Linkedin className="size-4 opacity-70 group-hover:opacity-100" />
