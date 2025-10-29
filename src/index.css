@@ -24,7 +24,7 @@
   .text-display {
     font-size: var(--text-display);
     line-height: 1.1;
-    letter-spacing: -0.04rem;
+    letter-spacing: -0.04em;
     font-weight: 500;
     color: var(--color-fg-primary);
   }
@@ -57,9 +57,11 @@
   .card-surface {
     @apply rounded-card bg-bg-card text-fg-dim text-sm p-4;
     border: 1px solid var(--color-border-card);
+    background-color: color-mix(in srgb, var(--color-bg-card) 96%, white 4%);
   }
 
-  .card-surface:hover {
+  .card-surface:hover,
+  .card-surface:focus-visible {
     @apply text-fg-primary;
     background-color: color-mix(in srgb, var(--color-bg-card) 90%, white 10%);
   }
